@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow>
+    <chain name="chain1">
+        THEN(a, b, c);
+    </chain>
+
+    <chain name="chain2">
+        WHEN(a, b, c);
+    </chain>
+
+    <chain name="chain3">
+        SWITCH(if1).TO(b, c);
+    </chain>
+
+    <chain name="chain4">
+        SWITCH(if2).TO(a, THEN(b, c).tag("td"));
+    </chain>
+
+    <chain name="chain5">
+        IF(if3, a, b);
+    </chain>
+</flow>
