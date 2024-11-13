@@ -19,4 +19,8 @@
     <chain name="chain5">
         IF(if3, a, b);
     </chain>
+
+    <chain name="chain6">
+        THEN(SWITCH(if2).TO(a, c.tag("td")), tagSelect.tag("这里传值进去"));
+    </chain>
 </flow>
